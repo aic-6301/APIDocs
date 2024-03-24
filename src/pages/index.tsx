@@ -10,21 +10,21 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
+    <header className={clsx('hero', styles.heroBanner)}>
+			<div className="container">
+				<Heading as="h1" className={`hero__title ${styles.layoutHeading}`}>
+					<img className={styles.img} src="/img/logo.png" alt="muneskyAPI" />
+					munesky API Docs
+				</Heading>
+				<div className={styles.buttons}>
+					<Link
+						className="button button--secondary button--lg"
+						to="/docs/intro">
+						ドキュメントを見る ≫
+					</Link>
+				</div>
+			</div>
+		</header>
   );
 }
 
@@ -32,8 +32,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="詳細">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
