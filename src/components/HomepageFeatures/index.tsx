@@ -10,26 +10,24 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'RESTful API',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        munesky APIはREST APIを使用しています。そのため、簡単に作成・取得・削除が可能です。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Free to Use',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        APIの使用料は無料です。
       </>
     ),
   },
-  {
+  /*{
     title: 'Powered by React',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
@@ -38,7 +36,7 @@ const FeatureList: FeatureItem[] = [
         be extended while reusing the same header and footer.
       </>
     ),
-  },
+  },*/
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
