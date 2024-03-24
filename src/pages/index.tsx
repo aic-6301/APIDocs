@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="詳細">
+      description="munesky APIの詳細">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'munesky API Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'munesky API',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
