@@ -1,0 +1,35 @@
+Delete an AFK status for the user.
+
+# Request
+```
+DELETE /v1/afk
+```
+
+# Request Body
+```json
+{
+    "id": "It is User ID"
+}
+```
+
+# Response
+
+## Error
+
+`HTTP StatusCode`:404
+
+```json
+{
+    "message": "Not Found"
+}
+```
+
+## Not Error
+
+`HTTP StatusCode`:200
+
+```json
+{
+    "message": "OK"
+}
+```

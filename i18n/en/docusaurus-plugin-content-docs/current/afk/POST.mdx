@@ -1,0 +1,41 @@
+Create an AFK status for the user.
+
+# Request
+```
+POST /v1/afk
+```
+
+# Request Body
+```json
+{
+    "id": "User ID",
+    "reason": "Reason for AFK"
+}
+```
+
+| Value | Type | Detail |
+| ---- | ---- | ---- |
+| ID | Snowflake | User's discord id |
+| Reason| String(Can Enpty) | Reason for AFK |
+
+# Response
+
+## Error
+
+`HTTP StatusCode`:400
+
+```json
+{
+    "message": "Error details"
+}
+```
+
+## No Error
+
+`HTTP StatusCode`:200
+
+```json
+{
+    "message": "OK"
+}
+```

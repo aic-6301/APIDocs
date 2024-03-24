@@ -1,0 +1,21 @@
+Get an AFK status for the user.
+
+# Request
+```
+GET /v1/afk/:id
+```
+
+# Response (Example)
+```
+{
+    "id" : "000000000000000000",
+    "reason": "Go to bed time",
+    "time": "2024-1-1 00:00:00.000000"
+}
+```
+
+| 値 | 型 | 詳細 |
+| ---- | ---- | ---- |
+| id | Snowflake(BigInt) | User's discord id |
+| reason | String | reason for AFK. |
+| time | datetime | AFK start time. |
