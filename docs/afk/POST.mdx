@@ -1,0 +1,36 @@
+ユーザーのAFK状態を作成します。
+
+# リクエスト
+```
+POST /v1/afk
+```
+
+# リクエストBody
+```json
+{
+    "id": "ユーザーIDです。",
+    "reason": "理由です。"
+}
+```
+
+# レスポンス
+
+## エラー
+
+`HTTP StatusCode`:400
+
+```json
+{
+    "message": "エラー内容"
+}
+```
+
+## エラーなし
+
+`HTTP StatusCode`:200
+
+```json
+{
+    "message": "OK"
+}
+```

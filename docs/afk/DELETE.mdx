@@ -1,0 +1,35 @@
+ユーザーのAFK状態を作成します。
+
+# リクエスト
+```
+DELETE /v1/afk
+```
+
+# リクエストBody
+```json
+{
+    "id": "ユーザーIDです。"
+}
+```
+
+# レスポンス
+
+## エラー
+
+`HTTP StatusCode`:404
+
+```json
+{
+    "message": "Not Found"
+}
+```
+
+## エラーなし
+
+`HTTP StatusCode`:200
+
+```json
+{
+    "message": "OK"
+}
+```
