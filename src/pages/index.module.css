@@ -21,3 +21,16 @@
   align-items: center;
   justify-content: center;
 }
+
+.layoutHeading {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  border-radius: 30%;
+  width : 20%;
+}

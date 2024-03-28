@@ -20,30 +20,30 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Free to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/free.svg').default,
     description: (
       <>
         APIの使用料は無料です。
       </>
     ),
   },
-  /*{
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+  {
+    title: 'Authorization',
+    Svg: require('@site/static/img/lock.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        ユーザー情報を使用するため、認証を必要としています。
+        認証トークンはログイン後に取得できます。
       </>
     ),
-  },*/
+  },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className={styles.featureSvg} role="img"/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

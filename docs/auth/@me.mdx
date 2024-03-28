@@ -1,0 +1,39 @@
+ユーザーの情報を取得します。
+
+::warn 認証が必要です。
+
+# リクエスト
+```
+POST /auth/@me
+```
+
+::warn レートリミットがかかっています。1つのIPにつき、`5/minute`です。
+
+# レスポンス
+
+## エラー
+
+`HTTP StatusCode`:400
+
+```json
+{
+    "message": "エラー内容"
+}
+```
+
+`HTTP StatusCode`:429
+```json
+{
+    "message": "Too Many Requests"
+}
+```
+
+## エラーなし
+
+`HTTP StatusCode`:200
+
+```json
+{
+    "message": "OK"
+}
+```
