@@ -1,13 +1,17 @@
 ユーザーのAFK状態を取得します。
 
-:::warning 認証が必要です。 :::
+:::warning
+認証が必要です。 
+:::
 
 # リクエスト
 ```
 GET /v1/afk/:id
 ```
 
-:::warning レートリミットがかかっています。1つのIPにつき、`20/minute`です。 :::
+:::warning
+レートリミットがかかっています。1つのIPにつき、`20/minute`です。
+:::
 
 # レスポンス (例)
 ```
@@ -23,3 +27,12 @@ GET /v1/afk/:id
 | id | Snowflake(BigInt) | ユーザーのDiscordIDです。 |
 | reason | String | AFKの理由です。 |
 | time | datetime | AFK開始時刻です。 |
+
+# エラー
+
+`HTTP StatusCode`:429
+```json
+{
+    "message": "Too Many Requests"
+}
+```
